@@ -1,0 +1,275 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background: beige;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: rgb(157, 157, 230);
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.flex {
+    display: flex;
+}
+.flex1 {
+    display: flex;
+    align-items: center;
+}
+.text {
+    font-size: 20px;
+    align-items: center;
+}
+.img1 {
+    width: 65%;
+    border-radius: 15px;
+}
+.containerimg {
+    width: 100%;
+    text-align: center;
+}
+.containertext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(63, 63, 63);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #111;
+}
+
+.containerbutton {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+.containerhome {
+    background-color: rgb(87, 87, 88);
+    height: 100vh;
+    text-align: center;
+}
+.texthome {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.img2 {
+    width: 15%;
+    border-radius: 5%;
+    border: 3px solid black;
+    margin-top: 150px;
+}
+.texthome2 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+.containerfooter {
+    text-align: center;
+    background-color: black;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+i {
+    font-size: 35px;
+    margin: 20px 75px;
+    color: white;
+}
+.textfooter {
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+.projet {
+    width: 1000px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(157, 157, 230);
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.textprojet {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    font-weight: bold;
+    font-size: 35px;
+    flex-direction: column;
+}
+.containerparcour p {
+    margin: 0;
+}
+
+.containerparcour {
+    margin: 20px 0;
+}
+
+.containerpro {
+    width: 100%;
+}
+
+.containerform {
+    width: 100%;
+}
+input[type="text"],
+textarea,
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+label {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1872d9;
+}
+
+.containerformulaire {
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .card {
+    background: #fff;
+    width: calc(25% - 8px);
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.wrapper .card .circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: default;
+}
+.card .circle .box,
+.card .circle .box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.card .circle .box {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+.card .circle:hover .box {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text {
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.circle .box span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+.card .circle:hover .box span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+@media (max-width: 753px) {
+    .wrapper {
+        max-width: 700px;
+    }
+    .wrapper .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 505px) {
+    .wrapper {
+        max-width: 500px;
+    }
+    .wrapper .card {
+        width: 100%;
+    }
+}
